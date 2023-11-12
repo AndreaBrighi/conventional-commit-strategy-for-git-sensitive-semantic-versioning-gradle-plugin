@@ -1,5 +1,6 @@
 package io.github.andreabrighi.gradle.gitsemver.conventionalcommit
 
+import org.danilopianini.gradle.gitsemver.SemanticVersion
 import org.danilopianini.gradle.gitsemver.UpdateType
 
 /**
