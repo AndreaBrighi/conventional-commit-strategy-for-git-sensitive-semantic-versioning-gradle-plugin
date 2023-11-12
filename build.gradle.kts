@@ -95,7 +95,7 @@ publishing {
             }
         }
         publications {
-            val androidSemanticVersion by creating(MavenPublication::class) {
+            val conventionalCommitStrategy by creating(MavenPublication::class) {
                 from(components["java"])
                 // If the gradle-publish-plugins plugin is applied, these are pre-configured
                 // artifact(javadocJar)
@@ -127,7 +127,7 @@ publishing {
                     }
                 }
             }
-            signing { sign(androidSemanticVersion) }
+            signing { sign(conventionalCommitStrategy) }
         }
     }
 }
