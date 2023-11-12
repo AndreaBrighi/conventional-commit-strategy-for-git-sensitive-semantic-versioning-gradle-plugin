@@ -19,10 +19,10 @@ plugins {
 group = "io.github.andreabrighi"
 class ProjectInfo {
     val projectId = "$group.$name"
-    val fullName = "Convetional commit for Gradle Git-Sensitive Semantic Versioning Plugin"
+    val fullName = "Conventional commit for Gradle Git-Sensitive Semantic Versioning Plugin"
     val projectDetails = "A strategy function that implement the use of conventional commit for" +
         " Git-Sensitive Semantic Versioning Plugin by Danilo Pianini."
-    val pluginImplementationClass = "io.github.andreabrighi.gradle.gitsemver.convetionalcommit.ConventionalCommitStrategy"
+    val pluginImplementationClass = "io.github.andreabrighi.gradle.gitsemver.conventionalcommit.ConventionalCommitStrategy"
 
     val websiteUrl = "https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin"
     val vcsUrl = "https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin.git"
@@ -104,8 +104,7 @@ publishing {
                     name.set(info.fullName)
                     description.set(info.projectDetails)
                     url.set(
-                        "https://github.com/" +
-                            "AndreaBrighi/Gradle-Git-Sensitive-Semantic-Versioning-Plugin-for-Android",
+                        "https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin",
                     )
                     licenses {
                         license {
