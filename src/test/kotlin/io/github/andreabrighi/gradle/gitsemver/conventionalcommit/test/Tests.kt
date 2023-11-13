@@ -69,7 +69,8 @@ internal class Tests : StringSpec(
             closure()
         }
 
-        private fun TemporaryFolder.file(name: String, content: () -> String) = newFile(name).writeText(content().trimIndent())
+        private fun TemporaryFolder.file(name: String, content: () -> String) =
+            newFile(name).writeText(content().trimIndent())
 
         private fun TemporaryFolder.runCommand(vararg command: String, wait: Long = 10) {
             val process = ProcessBuilder(*command)
