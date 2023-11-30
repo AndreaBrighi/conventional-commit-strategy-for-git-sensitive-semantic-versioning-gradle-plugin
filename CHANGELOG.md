@@ -1,3 +1,27 @@
+## [1.0.2](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.1...1.0.2) (2023-11-30)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.5 ([72f5143](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/72f5143f39beb29834f02d0b7cf2f09f84110908))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.77 ([70dac7b](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/70dac7b2049f481639a64daed929543f88b83715))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.78 ([66ffa55](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/66ffa55501ad047934da345da72660a944e92979))
+* **deps:** update gitsemver to v2.0.3 ([e226802](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/e22680241be361c5b8d9e12ee281e9ef4e7c206c))
+* **deps:** update gitsemver to v2.0.4 ([5db1342](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/5db1342c7fc2be4a9866609e309d10ae74b5feba))
+* **deps:** update node.js to 20.10 ([294ece9](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/294ece9cc5714f119ecc789fb811ee3bdfc01479))
+* **deps:** update plugin kotlin-qa to v0.54.1 ([0eb894b](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/0eb894bec6c00aaee6a22cb3cfb628c03ba437ff))
+* **deps:** update plugin kotlin-qa to v0.55.1 ([0f96580](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/0f96580443940b805a4c962e290a96dde6a8f918))
+* **deps:** update plugin kotlin-qa to v0.55.2 ([779ec4b](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/779ec4bc3d340dfec0efd77a04dadcc73e516421))
+* **deps:** update plugin multijvmtesting to v0.5.7 ([0b3b50c](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/0b3b50c942b0184cdab77cff4059dab90374c802))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.15 ([b0ec8d1](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/b0ec8d1e77bd123e45d256d5ede09cd223b09e8f))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.16 ([dd532da](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/dd532dad1bc3b6ec0eb59d5b925e131f21ff4d9b))
+* **deps:** update plugin publishoncentral to v5.0.20 ([23a4fe8](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/23a4fe8f5ace7be75e8a960f0871517d6b03ae68))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v4 ([be2264d](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/be2264daa2fb3a993f929e5310ef4149d7c097f4))
+
 ## [1.0.1](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.0...1.0.1) (2023-11-23)
 
 
