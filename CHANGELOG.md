@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.5...1.0.6) (2024-03-09)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.23 ([4af6e63](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/4af6e63f1b256976a60abfce66f38f3fb23c7b1d))
+
 ## [1.0.5](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.4...1.0.5) (2024-03-09)
 
 
