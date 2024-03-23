@@ -1,3 +1,18 @@
+## [1.0.7](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.6...1.0.7) (2024-03-23)
+
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.7 ([6830322](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/68303227510866be59ad70c4f370bfedc0aaac14))
+* **deps:** update gitsemver to v3.1.4 ([e8289dc](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/e8289dcb0bb64801078502cd24969daad3433d05))
+* **deps:** update kotest to v5.8.1 ([182d433](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/182d43380655ea51a1b137cd5c7757fe8f99a427))
+* **deps:** update plugin kotlin-qa to v0.60.3 ([40772fb](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/40772fba39602cb00a8c06ca707dfccd31d83aeb))
+* **deps:** update plugin kotlin-qa to v0.60.4 ([616a61a](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/616a61a3f4fc888654918c8a299ea12523972520))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.3 ([753d19e](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/753d19e8bf7402b70d8d9d6541a3f72eba20f02b))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.4 ([bdfeef7](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/bdfeef7f127c195289306435c382b062a0af307e))
+* **deps:** update plugin publishoncentral to v5.0.25 ([49b5822](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/49b5822d243f05513e89a8751baa3bd628773df5))
+* **deps:** update plugin publishoncentral to v5.0.26 ([c44a05f](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/c44a05fb32e5239e2db5bd8dbb4785f5580a9136))
+
 ## [1.0.6](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.5...1.0.6) (2024-03-09)
 
 
