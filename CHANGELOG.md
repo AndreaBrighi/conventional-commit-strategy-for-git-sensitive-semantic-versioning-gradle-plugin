@@ -1,3 +1,18 @@
+## [1.0.12](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.11...1.0.12) (2024-08-17)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.10 ([d2318f7](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/d2318f7b3dc424c2bbcfc2c463458a83f5f1775e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.96 ([66fb29e](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/66fb29e4632e831e0183190e544ba86848bd44d4))
+* **deps:** update plugin kotlin-qa to v0.65.2 ([e2140d4](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/e2140d466028dc1b01c4af381667bc4c10ec76fc))
+* **deps:** update plugin multijvmtesting to v1.2.4 ([9dd0a28](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/9dd0a286ddd653db6bb44e1268583c229c661a88))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.9 ([ff54c5b](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/ff54c5bb790eb6b9455924b5de006b99f4091efc))
+* **deps:** update plugin publishoncentral to v5.1.6 ([32783b1](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/32783b1f158034acf13ed723c9374ea26a97d70b))
+
+### Bug Fixes
+
+* **ci:** add user for maven in release ([04d7924](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/04d7924ccb0fab0c23223c2bed92642aa78e8101))
+
 ## [1.0.11](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.10...1.0.11) (2024-08-16)
 
 ### Dependency updates
