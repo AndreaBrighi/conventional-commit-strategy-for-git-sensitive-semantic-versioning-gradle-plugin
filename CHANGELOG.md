@@ -1,3 +1,9 @@
+## [1.0.18](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.17...1.0.18) (2024-12-21)
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2 ([#200](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/200)) ([066f16c](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/066f16c5b536579f7a7c4d4e30c0a2278ed9038f))
+
 ## [1.0.17](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/1.0.16...1.0.17) (2024-12-21)
 
 ### Dependency updates
