@@ -7,14 +7,15 @@ import org.danilopianini.gradle.gitsemver.UpdateType
  * An object that analyzes commit messages using the [Conventional Commit specification](https://www.conventionalcommits.org/en/v1.0.0/) and assigns a [SemanticVersion] to them.
  */
 object ConventionalCommit {
-
     private const val PATCH_COMMIT_REGEX = """^fix(\([^)]+\))?: .+$"""
     private const val MINOR_COMMIT_REGEX = """^(feat|perf)(\([^)]+\))?: .+$"""
     private const val MAJOR_COMMIT_REGEX =
         """(^[a-z]+(\([^)]+\))?!: .+$)|(^[a-z]+(\([^)]+\))?!?: .+BREAKING CHANGE: .*$)"""
 
     private fun isPatchCommit(message: String): Boolean = message.matches(PATCH_COMMIT_REGEX.toRegex())
+
     private fun isMinorCommit(message: String): Boolean = message.matches(MINOR_COMMIT_REGEX.toRegex())
+
     private fun isMajorCommit(message: String): Boolean = message.matches(MAJOR_COMMIT_REGEX.toRegex())
 
     /**
