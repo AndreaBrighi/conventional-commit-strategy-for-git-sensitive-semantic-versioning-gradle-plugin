@@ -1,8 +1,8 @@
 import io.github.andreabrighi.gradle.gitsemver.conventionalcommit.ConventionalCommit
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
+val kotlinVersion = libs.versions.kotlin.get()
 plugins {
     `java-gradle-plugin`
     alias(libs.plugins.dokka)
@@ -30,18 +30,23 @@ buildscript {
 }
 
 group = "io.github.andreabrighi"
+
 class ProjectInfo {
     val projectId = "$group.$name"
     val fullName = "Conventional commit for Gradle Git-Sensitive Semantic Versioning Plugin"
-    val projectDetails = "A strategy function that implement the use of conventional commit for" +
-        " Git-Sensitive Semantic Versioning Plugin by Danilo Pianini."
-    val pluginImplementationClass = "io.github.andreabrighi" +
-        ".gradle.gitsemver.conventionalcommit.ConventionalCommitStrategy"
+    val projectDetails =
+        "A strategy function that implement the use of conventional commit for" +
+            " Git-Sensitive Semantic Versioning Plugin by Danilo Pianini."
+    val pluginImplementationClass =
+        "io.github.andreabrighi" +
+            ".gradle.gitsemver.conventionalcommit.ConventionalCommitStrategy"
 
-    val websiteUrl = "https://github.com/AndreaBrighi/" +
-        "conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin"
-    val vcsUrl = "https://github.com/AndreaBrighi/" +
-        "conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin.git"
+    val websiteUrl =
+        "https://github.com/AndreaBrighi/" +
+            "conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin"
+    val vcsUrl =
+        "https://github.com/AndreaBrighi/" +
+            "conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin.git"
 
     // val scm = "scm:git:$websiteUrl.git"
     val tags = listOf("git", "semver", "semantic versioning", "vcs", "tag", "conventional commit")
@@ -55,7 +60,18 @@ repositories {
 }
 
 multiJvm {
-    maximumSupportedJvmVersion.set(latestJavaSupportedByGradle)
+    jvmVersionForCompilation = 11
+    maximumSupportedJvmVersion = latestJavaSupportedByGradle
+}
+
+// Enforce Kotlin version coherence
+configurations.matching { it.name != "detekt" }.all {
+    resolutionStrategy.eachDependency {
+        if (requested.group == "org.jetbrains.kotlin" && requested.name.startsWith("kotlin")) {
+            useVersion(kotlinVersion)
+            because("All Kotlin modules should use the same version, and compiler uses $kotlinVersion")
+        }
+    }
 }
 
 dependencies {
@@ -65,15 +81,6 @@ dependencies {
     implementation(libs.git.sem.ver)
     testImplementation(gradleTestKit())
     testImplementation(libs.bundles.kotlin.testing)
-}
-
-configurations.all {
-    resolutionStrategy.eachDependency {
-        if (requested.group == "org.jetbrains.kotlin" && requested.name.startsWith("kotlin")) {
-            useVersion(KOTLIN_VERSION)
-            because("All Kotlin modules should use the same version, and compiler uses $KOTLIN_VERSION")
-        }
-    }
 }
 
 tasks {
@@ -87,61 +94,40 @@ tasks {
         }
     }
     withType<KotlinCompile> {
-        kotlinOptions {
-            allWarningsAsErrors = true
-            freeCompilerArgs += listOf("-opt-in=kotlin.RequiresOptIn", "-Xinline-classes")
+        compilerOptions {
+            allWarningsAsErrors.set(true)
+            freeCompilerArgs.addAll(listOf("-opt-in=kotlin.RequiresOptIn", "-Xinline-classes"))
         }
     }
 }
 
+publishOnCentral {
+    projectDescription.set(info.projectDetails)
+    projectLongName.set(info.fullName)
+    projectUrl.set(info.websiteUrl)
+    repoOwner.set("AndreaBrighi") // <-- REQUIRED
+    licenseName.set("MIT License")
+    repository(
+        "https://maven.pkg.github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin"
+            .lowercase(),
+        name = "github",
+    ) {
+        user.set("AndreaBrighi")
+        password.set(System.getenv("GITHUB_TOKEN"))
+    }
+}
+
 publishing {
-    repositories {
-        maven {
-            url = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
-            // Pass the pwd via -PmavenCentralPwd='yourPassword'
-            val mavenCentralPwd: String? by project
-            val mavenCentralUser: String? by project
-            credentials {
-                username = mavenCentralUser
-                password = mavenCentralPwd
-            }
-        }
-        publications {
-            val conventionalCommitStrategy by creating(MavenPublication::class) {
-                from(components["java"])
-                // If the gradle-publish-plugins plugin is applied, these are pre-configured
-                // artifact(javadocJar)
-                // artifact(sourceJar)
-                pom {
-                    name.set(info.fullName)
-                    description.set(info.projectDetails)
-                    url.set(
-                        "https://github.com/AndreaBrighi/" +
-                            "conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin",
-                    )
-                    licenses {
-                        license {
-                            name.set("MIT")
-                        }
-                    }
-                    developers {
-                        developer {
-                            name.set("Andrea Brighi")
-                        }
-                    }
-                    scm {
-                        url.set(
-                            "https://github.com/AndreaBrighi/conventional-" +
-                                "commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin.git",
-                        )
-                        connection.set(
-                            "https://github.com/AndreaBrighi/conventional-" +
-                                "commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin.git",
-                        )
+    publications {
+        withType<MavenPublication> {
+            pom {
+                developers {
+                    developer {
+                        name.set("Andrea Brighi")
+                        email.set("andrea.brighi8@studio.unibo.it")
                     }
                 }
             }
-            signing { sign(conventionalCommitStrategy) }
         }
     }
 }
