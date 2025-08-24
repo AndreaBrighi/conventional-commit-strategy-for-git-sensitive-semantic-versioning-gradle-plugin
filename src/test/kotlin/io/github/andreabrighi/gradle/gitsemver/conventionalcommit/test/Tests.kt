@@ -2,9 +2,11 @@ package io.github.andreabrighi.gradle.gitsemver.conventionalcommit.test
 
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.string.shouldContain
-import org.gradle.internal.impldep.org.junit.rules.TemporaryFolder
 import org.gradle.testkit.runner.GradleRunner
+import java.nio.file.Path
 import java.util.concurrent.TimeUnit
+import kotlin.io.path.createFile
+import kotlin.io.path.createTempDirectory
 
 internal class Tests :
     StringSpec(
@@ -63,24 +65,23 @@ internal class Tests :
         },
     ) {
     companion object {
-        private fun folder(closure: TemporaryFolder.() -> Unit) =
-            TemporaryFolder().apply {
-                create()
-                closure()
-            }
+        private fun folder(closure: Path.() -> Unit) = createTempDirectory("gitSemVerTest").apply(closure)
 
-        private fun TemporaryFolder.file(
+        private fun Path.file(
             name: String,
             content: () -> String,
-        ) = newFile(name).writeText(content().trimIndent())
+        ) = resolve(name)
+            .createFile()
+            .toFile()
+            .writeText(content().trimIndent())
 
-        private fun TemporaryFolder.runCommand(
+        private fun Path.runCommand(
             vararg command: String,
             wait: Long = 10,
         ) {
             val process =
                 ProcessBuilder(*command)
-                    .directory(root)
+                    .directory(toFile())
                     .redirectError(ProcessBuilder.Redirect.INHERIT)
                     .redirectOutput(ProcessBuilder.Redirect.INHERIT)
                     .start()
@@ -90,7 +91,7 @@ internal class Tests :
             }
         }
 
-        private fun TemporaryFolder.runCommand(
+        private fun Path.runCommand(
             command: String,
             wait: Long = 10,
         ) = runCommand(
@@ -98,7 +99,7 @@ internal class Tests :
             wait = wait,
         )
 
-        private fun TemporaryFolder.initGit() {
+        private fun Path.initGit() {
             runCommand("git init")
             runCommand("git add .")
             runCommand("git config user.name gitsemver")
@@ -107,17 +108,15 @@ internal class Tests :
             runCommand("git", "commit", "-m", "\"Test commit\"")
         }
 
-        private fun TemporaryFolder.initGitWithTag() {
+        private fun Path.initGitWithTag() {
             initGit()
             runCommand("git", "tag", "-a", "1.2.3", "-m", "\"test\"")
         }
 
-        private fun TemporaryFolder.runGradle(
-            vararg arguments: String = arrayOf("printGitSemVer", "--stacktrace"),
-        ): String =
+        private fun Path.runGradle(vararg arguments: String = arrayOf("printGitSemVer", "--stacktrace")): String =
             GradleRunner
                 .create()
-                .withProjectDir(root)
+                .withProjectDir(toFile())
                 .withPluginClasspath()
                 .withArguments(*arguments)
                 .build()
@@ -125,8 +124,8 @@ internal class Tests :
 
         private fun configuredPlugin(
             pluginConfiguration: String = "",
-            otherChecks: TemporaryFolder.() -> Unit = {},
-        ): TemporaryFolder =
+            otherChecks: Path.() -> Unit = {},
+        ): Path =
             folder {
                 file("settings.gradle") { "rootProject.name = 'testproject'" }
                 file("build.gradle.kts") {
