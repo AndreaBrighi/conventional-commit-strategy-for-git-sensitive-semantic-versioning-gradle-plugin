@@ -1,3 +1,14 @@
+## [2.0.5](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.4...2.0.5) (2025-11-22)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.2.1 ([#382](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/382)) ([f547592](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/f547592176700f6050a6c784526a2399f07c7be7))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.154 ([#378](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/378)) ([e2ba21d](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/e2ba21dbfae9dda302243c88a87b7009402cbb39))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.156 ([#379](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/379)) ([f7387a5](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/f7387a5aff3bb6918b98107559738c703fb70b3c))
+* **deps:** update plugin kotlin-qa to v0.97.0 ([#380](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/380)) ([836a5c8](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/836a5c86bef8dfd8e065f2a232c6d38ae12dcc61))
+* **deps:** update plugin kotlin-qa to v0.98.0 ([#381](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/381)) ([1d063a9](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/1d063a990484b8914c8096998409decc8091336f))
+* **deps:** update plugin multijvmtesting to v4.3.2 ([38c4fc9](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/38c4fc9badf01434755746d052aa158961358bc2))
+
 ## [2.0.4](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.3...2.0.4) (2025-11-01)
 
 ### Dependency updates
