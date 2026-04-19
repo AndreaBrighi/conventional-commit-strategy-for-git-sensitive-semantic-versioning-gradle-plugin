@@ -1,3 +1,13 @@
+## [2.0.13](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.12...2.0.13) (2026-04-19)
+
+### Dependency updates
+
+* **deps:** update plugin publishoncentral to v9.1.15 ([#453](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/453)) ([fc392e6](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/fc392e6fc989d88ca26c70ceaa1fc066009b81d7))
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2.1.0 ([#356](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/356)) ([786ef35](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/786ef35da84066242b0fd6b756337ae17e9601cf))
+
 ## [2.0.12](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.11...2.0.12) (2026-04-18)
 
 ### Dependency updates
