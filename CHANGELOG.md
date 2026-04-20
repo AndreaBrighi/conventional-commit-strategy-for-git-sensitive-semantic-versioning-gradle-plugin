@@ -3,6 +3,17 @@
 ### Bug Fixes
 
 * **ci:** change publishing pipeline ([dadcf2c](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/dadcf2c9d76e8a81f4443bbe42e90479f36d213f))
+* **ci:** change publishing pipeline (add publication) ([5bec10c](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/5bec10c840a0dfc4e3e4bf3085dbbc621c2bf0e3))
+
+### General maintenance
+
+* **release:** 2.0.15 [skip ci] ([a31e60b](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/a31e60bf271eaf3360f9ea821ce266f5d84da239))
+
+## [2.0.15](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.14...2.0.15) (2026-04-20)
+
+### Bug Fixes
+
+* **ci:** change publishing pipeline ([dadcf2c](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/dadcf2c9d76e8a81f4443bbe42e90479f36d213f))
 
 ## [2.0.14](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.13...2.0.14) (2026-04-20)
 
