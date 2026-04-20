@@ -1,3 +1,13 @@
+## [2.0.14](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.13...2.0.14) (2026-04-20)
+
+### Dependency updates
+
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.14 ([#454](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/454)) ([b0567c5](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/b0567c5519f4fa8cae0f4d9264cbde5938d0449e))
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2.2.0 ([#448](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/448)) ([3e12d78](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/3e12d7859f77f2c083407602a12cd755f826fc00))
+
 ## [2.0.13](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.12...2.0.13) (2026-04-19)
 
 ### Dependency updates
