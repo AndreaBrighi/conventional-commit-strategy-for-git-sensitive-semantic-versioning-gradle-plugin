@@ -96,7 +96,7 @@ tasks {
     withType<KotlinCompile> {
         compilerOptions {
             allWarningsAsErrors.set(true)
-            freeCompilerArgs.addAll(listOf("-opt-in=kotlin.RequiresOptIn", "-Xinline-classes"))
+            freeCompilerArgs.addAll(listOf("-opt-in=kotlin.RequiresOptIn"))
         }
     }
 }
