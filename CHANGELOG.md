@@ -1,3 +1,15 @@
+## [2.0.17](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.16...2.0.17) (2026-05-06)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.3.21 ([6fa1bdf](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/6fa1bdf51259e21734630321b45ed8a309ee07ea))
+* **deps:** update dependency io.github.andreabrighi:conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin to v2.0.16 ([#470](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/470)) ([76271b7](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/76271b73f4e21088c25f974c215c8100b1003a6d))
+* **deps:** update plugin multijvmtesting to v4.3.5 ([#471](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/471)) ([07cd04d](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/07cd04dcb6a037c66040574cb66713d905ee758b))
+
+### Build and continuous integration
+
+* remove compiler with inline-classes ([64c5e8c](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/64c5e8c8331bab0631506b270a31f01d14d8b9a9))
+
 ## [2.0.16](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.15...2.0.16) (2026-05-03)
 
 ### Dependency updates
