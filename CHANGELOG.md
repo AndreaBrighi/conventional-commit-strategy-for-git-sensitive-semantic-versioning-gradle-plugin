@@ -1,3 +1,16 @@
+## [2.0.21](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.20...2.0.21) (2026-06-27)
+
+### Dependency updates
+
+* **core-deps:** update gradle to v9.6.1 ([#504](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/504)) ([d2f0844](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/d2f0844c8f59aa5631c7f34209c33a635cbee12a))
+* **deps:** update dependency io.github.andreabrighi:conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin to v2.0.20 ([#503](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/503)) ([5747fef](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/5747fef918795bab99a2f2543c6108f2eb50594c))
+* **deps:** update kotest to v6.2.1 ([#500](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/500)) ([8eec1dd](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/8eec1dd9e1365929b9b23f94aaac7aa0c7f873a8))
+* **deps:** update node.js to 24.17 ([#501](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/501)) ([5485ba7](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/5485ba76e0d34af3b017fd9f88b9e5dfc699b6e0))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v7 ([#502](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/issues/502)) ([77dc5df](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/commit/77dc5df353ce05606427f6e21696d2e352934083))
+
 ## [2.0.20](https://github.com/AndreaBrighi/conventional-commit-strategy-for-git-sensitive-semantic-versioning-gradle-plugin/compare/2.0.19...2.0.20) (2026-06-20)
 
 ### Dependency updates
